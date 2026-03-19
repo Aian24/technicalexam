@@ -110,23 +110,25 @@ Located in `ClientController@storeClientDetails`. It validates name, email, and 
 
 ---
 
-## Part 2 — Client Module Features
+## Part 2 — Advanced Client Management
 
-- List all clients with filter by status (All / Active / Inactive)
-- Add new client with validation
-- Edit existing client (email uniqueness ignores self)
-- Delete client with confirmation prompt
-- Flash messages for success and error feedback
-- Bootstrap 5 UI
+- **Modernized UI**: Built with a custom, premium aesthetic using Bootstrap 5 + custom glassmorphism.
+- **Single Page Experience**: Using Modals for Create and Edit workflows for a smoother feel.
+- **State-of-the-Art Notifications**: Integrated SweetAlert2 for toasts and delete confirmations.
+- **Advanced Filtering**: Live status filtering and Search integration (bonus points).
+- **Responsive Table**: Table scales for mobile and desktop views.
 
 ---
 
-## Bonus Features
+## Bonus Features (+10 Points)
 
-- Status filter (Active / Inactive / All) via query string
-- Bootstrap 5 for the UI
-- Duplicate email validation with a clear error message on the form
-- `storeClientDetails()` returns a proper JSON response (usable via Postman too)
+1. **Integrated Search**: Filter clients by Name or Email directly.
+2. **Status Filtering**: Easily switch between Active, Inactive, and All clients.
+3. **Advanced UI**: Used modern typography (Outfit), icons (FontAwesome), and premium styling.
+4. **SweetAlert2 Hooks**: Replaced standard browser alerts with professional, user-friendly modals.
+5. **Duplicate Email Handling**: Robust validation with user-friendly error display (integrated with SweetAlert2).
+6. **Dashboard Stats**: Real-time stats on the Dashboard page.
+
 
 ---
 

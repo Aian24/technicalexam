@@ -14,15 +14,18 @@ class ClientController extends Controller
         $this->repo = $repo;
     }
 
-    // list all clients, with optional status filter
+    // list all clients, with optional status and search filters
     public function index(Request $request)
     {
         $status = $request->query('status');
-        $clients = $this->repo->getAll($status);
+        $search = $request->query('search'); // Bonus: Search integration
+        
+        $clients = $this->repo->getAll($status, $search);
 
         return view('clients.index', [
             'clients' => $clients,
             'filter'  => $status,
+            'search'  => $search,
         ]);
     }
 
